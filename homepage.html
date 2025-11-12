@@ -1,31 +1,215 @@
- <style>
-    body{
-      background-color: #b4cdd1;
-      color: #807755;
-      font-size: 45px;
-      text-align: center;
-      font-family: Times New Roman;
-      font-weight: bold;
-    } 
-  </style>
+<!DOCTYPE html>
 <html>
-The Streets of Paris
-  <table>
-  <tr>
-  <th>
-  <img src="https://jmalcom3323.github.io/netart/images/sunset.jpg" width="150" height="280">
-  <th>
-  <th>
-  <img src="https://jmalcom3323.github.io/netart/images/parrot.avif" width="150" height="280">
-  </th>
-  </tr>
-  <tr>
-  <th>
-  <img src="https://jmalcom3323.github.io/netart/images/nature.jpg" width="150" height="280">
-  </tr>
-  <th>
-  <img src="https://jmalcom3323.github.io/netart/images/bumblebee.webp" width="150" height="280"> 
-  </th>
-  </tr>
-  </table>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places to travel to in Paris</title>
+    
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Garamond;
+  margin: 0;
+}
+
+/* Header */
+header {
+  padding: 60px;
+  text-align: center;
+  background: #80c2c4;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  background-color: #67a4a6;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #67a4a6;
+  color: black;
+}
+ 
+.section-title {
+   text-align: center;
+   font-weight: bold;
+   font-size: 1.5em;
+   margin-top: 40px;
+}
+/* Gallery Container */
+.gallery {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 220px;
+    transition: transform 0.3s, border-color 0.3s;
+    background-color: #fafafa;
+}
+
+.gallery-item:hover {
+	border-color: #777;
+    transform: scale(1.03);
+}
+
+.gallery-item img {
+	width: 100%px;
+    height: auto;
+    display: block;
+}
+.desc {
+	padding: 10px;
+    text-align: center;
+    font-style:italic;
+
+/* Footer */
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 8px;
+}
+@media screen and (max-width: 700px) {
+.navbar {
+flex-direction: column;
+align-items: center;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+.gallery {
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-item {
+  width: 80%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>Places to travel to in Paris</h1>
+  <p>Les Rues de Paris</p>
+</header>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <a href="#">Home</a>
+  <a href="#">Musuems & Art</a>
+  <a href="#">Historic & Cultral Landmarks</a>
+  <a href="#">Parks & Gardens</a>
+</nav>
+
+<section>
+<p class="section-title"><b>Musuems & Art</b></p>
+
+<div class="gallery">
+<div class="gallery-item">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="img_5terre.jpg" alt="Cinque Terre">
+  </a>
+  <div class="desc">Musée d'Orsay</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="img_forest.jpg" alt="Forest">
+  </a>
+  <div class="desc">La Galerie Dior</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="img_lights.jpg" alt="Northern Lights">
+  </a>
+  <div class="desc">Musée National Picasso</div>
+</div>
+</div>
+</section>
+
+<section>
+<p class="section-title"><b>Historic & Cultral Landmarks</b></p>
+<div class="gallery">
+<div class="gallery-item">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="img_5terre.jpg" alt="Cinque Terre">
+  </a>
+  <div class="desc">Eiffel Tower</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="img_forest.jpg" alt="Forest">
+  </a>
+  <div class="desc">Sainte-Chapelle</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Panthéon</div>
+  </div>
+</div>
+</section>
+
+<section>
+<p class="section-title"><b>Parks & Gardens</b></p>
+<div class="gallery">
+
+<div class="gallery-item">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="img_5terre.jpg" alt="Cinque Terre">
+  </a>
+  <div class="desc">Jardin du Luxembourg</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="img_forest.jpg" alt="Forest">
+  </a>
+  <div class="desc">Tuileries Garden</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="img_lights.jpg" alt="Northern Lights">
+  	</a>
+  	<div class="desc">Parc Floral de Paris</div>
+  </div>
+</div>
+</section>
+
+	<footer>
+		<p>2025 Paris, France | Designed by Jillian Malcomb</p>
+	</footer>
+
+</body>
 </html>
+
